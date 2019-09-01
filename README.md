@@ -15,7 +15,7 @@ You then tell ARES to start a test run, start a module within that test run, rep
 
 (If you want to can set up your system to run several modules in parallell.)
 
-### Installation
+## Installation
 
 Install this module:
 
@@ -29,7 +29,7 @@ and then use it in your scripts:
 const ares = require('ares-helper');
 ```
 
-### Create a json file with your ARES account and project details
+## Create a json file with your ARES account and project details
 You could call the json file *ares-config.json* and put it at root level in your Node.js project. The structure of the file should look like this
 
 ```json
@@ -41,9 +41,9 @@ You could call the json file *ares-config.json* and put it at root level in your
 }
 ```
 
-### API/methods
+## API/methods
 
-#### ares.setProjectInfo(path to json)
+### ares.setProjectInfo(path to json)
 
 ```js
 ares.setProjectInfo('ares-config.json');
@@ -53,7 +53,7 @@ Sets the basic project info by pointing to a JSON file.
 
 (Alternatively you can send the json data directly to the method.)
 
-#### ares.startTests();
+### ares.startTests();
 
 Start a test run:
 
@@ -61,7 +61,7 @@ Start a test run:
 await ares.startTests();
 ```
 
-#### ares.startModule({...})
+### ares.startModule({...})
 
 Start a module within the test run:
 
@@ -72,7 +72,7 @@ await ares.startModule({
 })
 ```
 
-#### ares.testResult({})
+### ares.testResult({})
 
 Save a test result for a test within a module:
 
@@ -85,12 +85,10 @@ await ares.testResult({
 });
 ```
 
-##### More options
+#### More options
 **Please note:** You can provide much more info if you want. Additional properties you can use are: *testData, failStacktrace, testBrowser, testMachine, testDevice, testOs, testSuite, imageLink, videoLink, runBy, errorMessage, executionMode* and *failType*.
 
-```
-
-#### ares.endModule({})
+### ares.endModule({})
 
 When you have reported all test results within a module:
 
@@ -100,7 +98,7 @@ await ares.endModule({
 });
 ```
 
-#### ares.endTests()
+### ares.endTests()
 
 When the whole test run is done:
 
@@ -108,12 +106,21 @@ When the whole test run is done:
 await ares.endTests()
 ```
 
-### Example code
+## Debugging
+If you want to debug what happens in the communication between your application and the ARES server:
+
+```
+ares.debug = true;
+```
+
+This will output a verbose log to the console.
+
+## Example code
 
 This is some example code to quickly test that communication works. (However normally, in a real-life scenario, you would spread your calls to **ares** throughout different test steps and files...)
 
 ```js
-const ares = require('./index.js');
+const ares = require('ares-helper');
 
 async function tryItOut(){
 

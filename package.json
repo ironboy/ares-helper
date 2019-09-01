@@ -1,7 +1,7 @@
 {
   "name": "ares-helper",
   "author": "Thomas Frank <thomas@nodehill.com> (http://nodehill.com)",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simplifies communication from Node.js to the API for the www.testastra.com/ares dashboard",
   "main": "index.js",
   "dependencies": {
