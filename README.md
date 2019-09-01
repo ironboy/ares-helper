@@ -72,7 +72,7 @@ await ares.startModule({
 })
 ```
 
-### ares.testResult({})
+### ares.testResult({...})
 
 Save a test result for a test within a module:
 
@@ -88,7 +88,7 @@ await ares.testResult({
 #### More options
 **Please note:** You can provide much more info if you want. Additional properties you can use are: *testData, failStacktrace, testBrowser, testMachine, testDevice, testOs, testSuite, imageLink, videoLink, runBy, errorMessage, executionMode* and *failType*.
 
-### ares.endModule({})
+### ares.endModule({...})
 
 When you have reported all test results within a module:
 
