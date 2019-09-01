@@ -1,0 +1,25 @@
+{
+  "name": "ares-helper",
+  "author": "Thomas Frank <thomas@nodehill.com> (http://nodehill.com)",
+  "version": "1.0.0",
+  "description": "Simplifies communication from Node.js to the API for the www.testastra.com/ares dashboard",
+  "main": "index.js",
+  "dependencies": {
+    "app-root-path": "^2.2.1",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ironboy/ares-helper.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ironboy/ares-helper/issues"
+  },
+  "homepage": "https://github.com/ironboy/ares-helper#readme"
+}
