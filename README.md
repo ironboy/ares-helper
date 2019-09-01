@@ -74,7 +74,7 @@ await ares.startModule({
 
 #### ares.testResult({})
 
-Save a test result for a test within a module
+Save a test result for a test within a module:
 
 ```js
 await ares.testResult({
@@ -83,6 +83,7 @@ await ares.testResult({
   passed: false, // true = passed or false = failed
   errorMessage: 'Provide an errormessge if failed'
 });
+```
 
 ##### More options
 **Please note:** You can provide much more info if you want. Additional properties you can use are: *testData, failStacktrace, testBrowser, testMachine, testDevice, testOs, testSuite, imageLink, videoLink, runBy, errorMessage, executionMode* and *failType*.
