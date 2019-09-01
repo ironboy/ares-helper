@@ -36,8 +36,8 @@ You could call the json file *ares-config.json* and put it at root level in your
 {
   "userToken": "user token copied from the ARES website",
   "workspaceName": "workspace name copied from the ARES website",
-  "projectKey": "projekt key copied from the ARES website",
-  "projectName": "projeft name copied from the ARES website"
+  "projectKey": "project key copied from the ARES website",
+  "projectName": "project name copied from the ARES website"
 }
 ```
 
